@@ -9,8 +9,7 @@ router.get('/', function(req, res, next) {
 
 /* GET home page. */
 router.get('/imgcolor', function(req, res, next) {
-  var color = getImgColor(req);
-  res.send(color);
+  getImgColor.add(req, res, next);
 });
 
 module.exports = router;
